@@ -259,7 +259,7 @@ button {
 .call_text_main{
     width: 100%;
     float: left;
-    background-color: #D30F0F;
+    background-color: #fff;
     height: auto;
     padding: 10px 0px;
 }
@@ -975,7 +975,7 @@ textarea#comment.massage-bt::placeholder {
 
 .footer_text {
     width: 100%;
-    float: left;
+    float: right;
     font-size: 16px;
     color: #fefefd;
     margin: 0px;
@@ -983,8 +983,8 @@ textarea#comment.massage-bt::placeholder {
 
 .social_icon {
     width: 100%;
-    float: left;
-    margin-top: 10px;
+    float: right;
+    margin-top: -40px;
 }
 
 .social_icon ul {
@@ -993,11 +993,11 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .social_icon li {
-    float: left;
+    float: right;
 }
 
 .social_icon li a {
-    float: left;
+    float: right;
     padding: 2px 7px;
     background-color: #ffffff;
     color: #2e2e2e;
@@ -1010,7 +1010,7 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .social_icon li a:hover {
-    background-color: #D30F0F;
+    background-color: #081B6D;
     color: #ffffff;
 }
 
