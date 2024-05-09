@@ -252,7 +252,7 @@ button {
 
 
 .navbar-brand {
-    margin: 0px;
+    margin: -20px;
     float: right;
 }
 
