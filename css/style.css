@@ -300,10 +300,26 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner.png);
     height: auto;
-    background-size: 100%;
-    padding: 200px 0px 160px 0px;
+    background-color: #fff; /* Removi a imagem de fundo para evitar sobreposição */
+    padding: 50px 0; /* Ajuste de padding para melhor espaçamento */
+}
+
+.banner_img {
+    text-align: center;
+    background-image: url('caminho/para/sua/imagem.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem dentro da div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 400px; /* Altura da div */
+}
+
+
+.banner_img img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: 100%; /* Define uma altura máxima de 100% da altura da div */
 }
 
 .banner_taital_main {
@@ -312,40 +328,29 @@ button {
 }
 
 .banner_taital {
-    width: 100%;
     font-size: 60px;
-    color: #081B6D;
+    color: #D30F0F;
     font-weight: 800;
     line-height: 70px;
 }
 
 .banner_text {
-    width: 80%;
-    float: left;
     font-size: 16px;
     color: #403f3f;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
 }
 
 .btn_main {
-    width: 100%;
-    float: left;
     padding-top: 40px;
 }
 
-.contact_bt {
-    width: 175px;
-    float: left;
-}
-
 .contact_bt a {
-    width: 100%;
-    float: left;
     font-size: 18px;
     background-color: #D30F0F;
     color: #fcf8f8;
     text-align: center;
     padding: 10px;
+    display: inline-block; /* Corrige o problema de margem do link */
 }
 
 .contact_bt a:hover {
@@ -359,25 +364,14 @@ button {
     margin-left: 10px;
 }
 
-.banner_img {
-    width: 100%;
-    float: left;
-    text-align: center;
-    display: none;
-}
-
-#banner_slider a.carousel-control-prev {
+#banner_slider .carousel-control-prev {
     left: -120px;
     top: 155px;
-    right: initial;
 }
 
-#banner_slider a.carousel-control-next {
-    right: initial;
-    top: 100px;
+#banner_slider .carousel-control-next {
     left: -120px;
-    color: #fcf8f8;
-    background-color: #081B6D;
+    top: 155px;
 }
 
 #banner_slider .carousel-control-next,
@@ -397,6 +391,7 @@ button {
     color: #fcf8f8;
     background-color: #081B6D;
 }
+
 
 /* banner section end */
 
