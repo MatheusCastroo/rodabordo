@@ -291,6 +291,38 @@ button {
 .padding_left_15 {
     padding-left: 10px;
 }
+.social_icon {
+    width: 100%;
+    float: right;
+    margin-top: -40px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.social_icon li {
+    float: right;
+}
+
+.social_icon li a {
+    float: right;
+    padding: 2px 7px;
+    background-color: #ffffff;
+    color: #2e2e2e;
+    border-radius: 100%;
+    font-size: 20px;
+    margin-right: 5px;
+    width: 41px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social_icon li a:hover {
+    background-color: #081B6D;
+    color: #ffffff;
+}
 
 /* header section end */
 
@@ -301,25 +333,18 @@ button {
     width: 100%;
     float: left;
     height: auto;
-    background-color: #fff; /* Removi a imagem de fundo para evitar sobreposição */
-    padding: 50px 0; /* Ajuste de padding para melhor espaçamento */
+    background-color: #fff;
+    padding: 50px 0;
 }
 
 .banner_img {
     text-align: center;
-    background-image: url('caminho/para/sua/imagem.jpg');
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área da div */
-    background-position: center; /* Centraliza a imagem dentro da div */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    height: 400px; /* Altura da div */
+    min-width: 70%; /* Define um tamanho mínimo para a imagem */
 }
 
-
 .banner_img img {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    max-height: 100%; /* Define uma altura máxima de 100% da altura da div */
+    width: 100%; /* Faz a imagem ocupar toda a largura da div .banner_img */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .banner_taital_main {
@@ -328,20 +353,20 @@ button {
 }
 
 .banner_taital {
-    font-size: 60px;
-    color: #D30F0F;
+    font-size: 40px; /* Diminui o tamanho da fonte */
+    color: #081B6D;
     font-weight: 800;
-    line-height: 70px;
+    line-height: 50px; /* Ajusta a altura da linha */
 }
 
 .banner_text {
-    font-size: 16px;
+    font-size: 14px; /* Diminui o tamanho da fonte */
     color: #403f3f;
     margin: 20px 0 0 0;
 }
 
 .btn_main {
-    padding-top: 40px;
+    padding-top: 20px; /* Diminui o espaçamento superior */
 }
 
 .contact_bt a {
@@ -350,7 +375,7 @@ button {
     color: #fcf8f8;
     text-align: center;
     padding: 10px;
-    display: inline-block; /* Corrige o problema de margem do link */
+    display: inline-block;
 }
 
 .contact_bt a:hover {
@@ -932,120 +957,68 @@ textarea#comment.massage-bt::placeholder {
 
 /* footer section start */
 
+/* footer section start */
+
 .footer_section {
     width: 100%;
     float: left;
     height: auto;
     background-color: #081B6D;
-    background-size: 100%;
-    padding: 50px 0px;
-}
-
-.footeer_logo{
-    width: 100%;
-    float: left;
+    padding: 50px 0;
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.footer_section_2{
-    width: 100%;
-    float: left;
-    padding-top: 50px;
+.footeer_logo {
+    margin-bottom: 30px;
+}
+
+.footeer_logo img {
+    max-width: 200px; /* Aumentando o tamanho da logo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.footeer_logo img:hover {
+    transform: scale(1.1);
 }
 
 .footer_taital {
-    width: 100%;
-    float: left;
-    font-size: 26px;
+    font-size: 28px;
     color: #fefefd;
     font-weight: bold;
     padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.lorem_text {
-    width: 60%;
-    float: left;
+.location_text, .subscribe_bt {
+    margin-bottom: 20px;
+}
+
+.location_text a, .location_text p {
     font-size: 16px;
     color: #fefefd;
-    margin: 0px;
-}
-
-.footer_text {
-    width: 100%;
-    float: right;
-    font-size: 16px;
-    color: #fefefd;
-    margin: 0px;
-}
-
-.social_icon {
-    width: 100%;
-    float: right;
-    margin-top: -40px;
-}
-
-.social_icon ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-.social_icon li {
-    float: right;
-}
-
-.social_icon li a {
-    float: right;
-    padding: 2px 7px;
-    background-color: #ffffff;
-    color: #2e2e2e;
-    border-radius: 100%;
-    font-size: 20px;
-    margin-right: 5px;
-    width: 41px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.social_icon li a:hover {
-    background-color: #081B6D;
-    color: #ffffff;
-}
-
-.update_mail {
-    color: #ffffff;
-    width: 100%;
-    height: 55px;
-    font-size: 18px;
-    padding: 10px 20px 0px 0px;
-    background-color: transparent;
-    border-bottom: 1px solid #ffffff !important;
-    border: 0px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    display: block;
-}
-
-textarea#comment::placeholder {
-    color: #fff;
-}
-
-.subscribe_bt {
-    width: 140px;
-    float: right;
-    margin-top: 20px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
 }
 
 .subscribe_bt a {
-    width: 100%;
-    float: left;
     color: #ffffff;
     font-size: 16px;
-    padding: 8px 0px;
+    padding: 10px 20px;
     text-transform: uppercase;
     background-color: #D30F0F;
-    text-align: center;
-    border-radius: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 
 .subscribe_bt a:hover {
@@ -1053,65 +1026,33 @@ textarea#comment::placeholder {
     background-color: #ffffff;
 }
 
-.location_text {
-    width: 100%;
-    float: left;
-}
-
-.location_text a {
-    width: 100%;
-    float: left;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-
-.location_text a:hover {
-    color: #D30F0F;
-}
-.white_text {
-    color: #fff; 
-}
-
-.padding_left_15 {
-    padding-left: 10px;
-}
-
-
-
-/* footer section end */
-
-
-/* copyright section start */
+/* Copyright Section Start */
 
 .copyright_section {
     width: 100%;
     float: left;
     background-color: #081B6D;
-    height: auto;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff;
 }
 
 .copyright_text {
-    width: 100%;
-    float: left;
     font-size: 16px;
     color: #fefefd;
     text-align: center;
-    margin-left: 0px;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.copyright_text a {
+copyright_text a {
     color: #fefefd;
+    text-decoration: none;
 }
 
-.copyright_text a:hover {
+copyright_text a:hover {
     color: #D30F0F;
 }
 
+/* footer section end */
 
-/* copyright section end */
-
-.margin_top90 {
-    margin-top: 90px;
-}
